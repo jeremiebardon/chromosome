@@ -16,7 +16,7 @@
 
 .chromosome-button.primary {
   background: var(--primary-button-enabled);
-  color: red;
+  color: #fff;
 }
 
 .chromosome-button.primary:hover {

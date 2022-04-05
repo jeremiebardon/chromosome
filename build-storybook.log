@@ -21,220 +21,289 @@ Node.js version : v16.13.1
 
 Operating system : Windows 10
 
-[16:04:34] No configuration file found, switching to CLI flags.
-[16:04:34] Using tsconfig file : D:\projects\chromosome\tsconfig.json
-[16:04:34] Including      : D:\projects\chromosome\.browserslistrc
-[16:04:34] Including      : D:\projects\chromosome\.editorconfig
-[16:04:34] Including      : D:\projects\chromosome\.gitignore
-[16:04:34] Including      : D:\projects\chromosome\angular.json
-[16:04:34] Including      : D:\projects\chromosome\karma.conf.js
-[16:04:34] Including      : D:\projects\chromosome\package-lock.json
-[16:04:34] Including      : D:\projects\chromosome\documentation.json
-[16:04:34] Including      : D:\projects\chromosome\README.md
-[16:04:34] Including      : D:\projects\chromosome\package.json
-[16:04:34] Including      : D:\projects\chromosome\tsconfig.json
-[16:04:34] Including      : D:\projects\chromosome\build-storybook.log
-[16:04:34] Including      : D:\projects\chromosome\tsconfig.spec.json
-[16:04:34] Including      : D:\projects\chromosome\tsconfig.app.json
-[16:04:34] Including      : D:\projects\chromosome\.storybook\main.js
-[16:04:34] Ignoring       : D:\projects\chromosome\.storybook\typings.d.ts
-[16:04:34] Including      : D:\projects\chromosome\.storybook\tsconfig.json
-[16:04:34] Including      : D:\projects\chromosome\.vscode\launch.json
-[16:04:34] Including      : D:\projects\chromosome\.storybook\preview.js
-[16:04:34] Including      : D:\projects\chromosome\.vscode\tasks.json
-[16:04:34] Including      : D:\projects\chromosome\.vscode\extensions.json
-[16:04:34] Including      : D:\projects\chromosome\src\favicon.ico
-[16:04:34] Including      : D:\projects\chromosome\src\main.ts
-[16:04:34] Including      : D:\projects\chromosome\src\polyfills.ts
-[16:04:34] Including      : D:\projects\chromosome\src\index.html
-[16:04:34] Including      : D:\projects\chromosome\src\styles.css
-[16:04:34] Including      : D:\projects\chromosome\src\test.ts
-[16:04:34] Including      : D:\projects\chromosome\src\assets\.gitkeep
-[16:04:34] Including      : D:\projects\chromosome\src\app\app.component.ts
-[16:04:34] Including      : D:\projects\chromosome\src\app\app.module.ts
-[16:04:34] Including      : D:\projects\chromosome\src\environments\environment.prod.ts
-[16:04:34] Including      : D:\projects\chromosome\src\environments\environment.ts
-[16:04:34] Including      : D:\projects\chromosome\src\assets\style\colors.css
-[16:04:34] Including      : D:\projects\chromosome\src\assets\style\global.css
-[16:04:34] Including      : D:\projects\chromosome\src\assets\style\shadow.css
-[16:04:34] Including      : D:\projects\chromosome\src\assets\style\reset.css
-[16:04:34] Including      : D:\projects\chromosome\src\assets\style\typography.css
-[16:04:34] Including      : D:\projects\chromosome\src\assets\icons\archive.svg
-[16:04:34] Including      : D:\projects\chromosome\src\assets\icons\clock.svg
-[16:04:34] Including      : D:\projects\chromosome\src\assets\icons\compass.svg
-[16:04:34] Including      : D:\projects\chromosome\src\app\button\button.component.css
-[16:04:34] Including      : D:\projects\chromosome\src\app\button\button.component.html
-[16:04:34] Including      : D:\projects\chromosome\src\app\button\button.component.ts
-[16:04:34] Including      : D:\projects\chromosome\src\app\button\button.stories.ts
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\02c6976433a8d65dc051e7163d8a674d.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\0261b02da46d1fee33f2780edfb1a13b.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\0597f441f2a47ba7cd7ecfd4ad1ac2aa.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\0f088a8c3b8b9fc9457f9840c0d070d5.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\11d6f65c9f5d70e9fed0bb5c8300c1ae.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\13dc28177128c8d368650e54df8af28e.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\121f783993ebf32184608f904b0cb982.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\15a2cd7fee6d21cc731a0ef132eddb89.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\1235d754bb2c25975d5b93a4f6e82b87.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\190e382fe52c87e6202056997d0e91dc.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\22f9d0fcf6133fe0fc20f37ffc72c54e.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\220ebf08d1347529a5ad1c65fec1534a.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\2c337f33bb743ad26449d83780c5dae9.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\1b17e336543458a771627dbb62c2bdcf.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\1c1828a1ec3d32858eabe4b91afb72e4.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\25ad94f960de89a3e73779b185d5f048.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\2fe0cb320f3c42f4ab66d08050eb2e1e.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\3545250a54d0c6818d633894cbe07116.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\387e800e542805a67fb6d9973e63736d.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\3f952bed8ccac00e31ecd5f8405956b0.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\38ab5a138d770a12e01840198f068758.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\3b1d166da6319095270d3bd411ecd6aa.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\40b706804bf10244aedf9ddaf1a94b35.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\425b6f0ae5f427b64ae2200348734814.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\46a14a3db76ad52765b12263607fbc74.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\31fab701aebfea8a6ba3e866c2d42f3f.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\42374e97c0b182e485a46048fdb4c9dd.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\493b7e3e0fcd8f06a7fffb9fdf1076bc.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\46cf2dfbe10925cae2e8dbbafa70a4fe.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\49fe37854fd00f845ad739269c731398.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\48e0042fbcd7ce82d31c9af8f5ee5aec.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\4dd659f4364861f83174df1c31f8e80b.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\4c2941bb77bade2ff7e50da9fef50ab4.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\4e281f03c74558c723a094bcc80f0faa.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\55d42bf264408d88289a352e06ece088.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\4ac26e3c053f1f3466c8e0ac3c27e054.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\56011017f61c4f1397f11874a8e7814c.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\5a574c2180dfbb8b2ec146b6a8985841.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\5c2fd4f819bc1bda883ee2a547a6c53d.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\578ece42dc97c08fd7f65c2fcd34e159.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\5c445aad446b060fff8035a06022320e.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\61e4467b0a4958f0be76e9f3f6d84de0.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\655006f166bac93c4b764c3bce495309.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\655e5c7493642b74caad12e3ddc41be4.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\704a13906535ce109cb1559a0ac567ba.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\78a66bf829c0bf8542d53ceb9ff308ed.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\69e7151be5abf98a2704faec5407e54e.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\78a9abfca4093b97ea3c10628b27b9a3.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\6b103aa76f0a03d3312ec892f596beb9.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\7cce13086253ce5db9c3002e1d920745.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\7d7b2abff6cd26e73ba6e7732b35c449.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\7af2ef53abd14902db08de9adf2cb1ab.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\832a5e0baa181bff74551351ecf9b8d0.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\86fb84f24b1868b07f1542059a695895.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\8fc6ff7223cff5b056549535e33b4291.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\910f0899a539b8950e2b6bbdd482dcf5.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\8914bf66f0f3769091f25f52c430aa8d.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\93ce0ed66f6075254a17168a19cb044b.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\959e363a40c483bc553641c4ab775480.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\97b0e60bc627525e39744d4a6072503d.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\9e2ec7e40491ec2003d56a4cf3064eda.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\9f8f3e0f220484b1b729f4850e85a8ec.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\a04bebe5fd2fbf9ff6831306ef980353.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\ae75f3d75a5b1a35c00d552298bac229.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\afe2659926e10a95130fa9a729608a92.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\a257e9fef162dfa58106c21a46721767.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\b09a255397fd9b260b9daaef59f3245f.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\b172cbb9f72cea67feb35826f084c37e.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\b44cbd5a6a39de2f0d1b1d9c4222eb23.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\b55e59357cf356713866ed750fd30646.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\b8d884908d0f28a391652b484d2e0dc0.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\b93fbfea378e06b657874642aee80245.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\b94c3abd783f060f4becfa16358be553.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\8c6275754bfa2f219a022d499edaa491.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\bd2a1ea6b25f193e6dc2b169dd03f040.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\c2122ac4fecc0bde557bddfde0c068cf.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\c2ee4dab4e895c50697870cda21064c4.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\c71b1878808e963c48aea1716eed4410.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\9694c1766c412215f7313b9618caf577.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\cca35fc1a4d9c74bdd266931e13b3e66.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\cbfe04a642cc4a9a94521356ae2784e5.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\cba0cceab6c73e358db1e037dc8611f9.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\ccf7319462c75e2710d34fa1901e628f.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\cde04feb11564ef1c7f5b131999629dd.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\d02e40b8da46de6360a7f70ad9ec4c61.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\cfa102472bbf5d35dac2678aea31b2ac.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\d3e6dce6e8e02397f4b74c6d9b11f559.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\d182d29451a3253e151edcec97d0c685.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\d422e08140645fa3795b40c8e8049073.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\d82543fa277b59dc13ab5a5b75ee2f3d.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\d031bc486d1c55c4b0521e6add888a3a.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\daf34e2b7e294d858be0f99cdc28a089.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\d91e4817e7b7e2aa021f8493a4e5e8c6.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\db158049d10679e6aed6b214538595af.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\da52e06f9ef2bb11265878d09ef95099.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\df1976aa6dfeedf5871e1e649ad0b11c.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\df3b9816d469e083c0da11513e41f687.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\e354d41d0eb3b9afe3f66299e5c190fd.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\e4d5681334ae632d2b4c81dcf541e8e0.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\ed3563897d930e5ab1dd3fc35cbe6333.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\e253abe869ddb4f7e82bc5a254a8330d.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\f1e7df87a297c5efeb3ac30656fa7e0f.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\f500c56c94cc426494a98831c7224279.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\f2a5caf32eb0f3e48ae068f38037ee6a.json
-[16:04:34] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\fb56f6909fcdd68e85d8f83ae7bae0dd.json
-[16:04:34] Searching package.json file
-[16:04:34] package.json file found
-[16:04:34] Processing package.json dependencies
-[16:04:34] Searching README.md, CHANGELOG.md, CONTRIBUTING.md, LICENSE.md, TODO.md files
-[16:04:34] README.md file found
-[16:04:34] Error during D:\projects\chromosome\CHANGELOG read
-[16:04:34] Continuing without CHANGELOG.md file
-[16:04:34] Error during D:\projects\chromosome\CONTRIBUTING read
-[16:04:34] Continuing without CONTRIBUTING.md file
-[16:04:34] Error during D:\projects\chromosome\LICENSE read
-[16:04:34] Continuing without LICENSE.md file
-[16:04:34] Error during D:\projects\chromosome\TODO read
-[16:04:34] Continuing without TODO.md file
-[16:04:34] Get dependencies data
-[16:04:34] parsing        : D:/projects/chromosome/src/main.ts
-[16:04:34] parsing        : D:/projects/chromosome/src/polyfills.ts
-[16:04:34] parsing        : D:/projects/chromosome/src/test.ts
-[16:04:34] found          : require
-[16:04:34] found          : context
-[16:04:34] parsing        : D:/projects/chromosome/src/app/app.component.ts
-[16:04:34] found          : AppComponent
-[16:04:34] parsing        : D:/projects/chromosome/src/app/app.module.ts
-[16:04:34] found          : AppModule
-[16:04:34]                : - imports:
-[16:04:34]                : 	- BrowserModule
-[16:04:34]                : 	- CommonModule
-[16:04:34]                : 	- AngularSvgIconModule
-[16:04:34]                : - declarations:
-[16:04:34]                : 	- AppComponent
-[16:04:34]                : 	- ButtonComponent
-[16:04:34]                : - bootstrap:
-[16:04:34]                : 	- AppComponent
-[16:04:34] parsing        : D:/projects/chromosome/src/environments/environment.prod.ts
-[16:04:34] found          : environment
-[16:04:34] parsing        : D:/projects/chromosome/src/environments/environment.ts
-[16:04:34] found          : environment
-[16:04:34] parsing        : D:/projects/chromosome/src/app/button/button.component.ts
-[16:04:34] found          : ButtonType
-[16:04:34] found          : ButtonComponent
-[16:04:34] parsing        : D:/projects/chromosome/src/app/button/button.stories.ts
-[16:04:34] found          : Template
-[16:04:34] found          : Primary
-[16:04:34] found          : Secondary
-[16:04:34] found          : Tertiary
-[16:04:34] found          : Ghost
-[16:04:34] -------------------
-[16:04:34] Project statistics 
-[16:04:34] - files      : 147
-[16:04:34] - module     : 1
-[16:04:34] - component  : 2
-[16:04:34] -------------------
-[16:04:34] Prepare components
-[16:04:34]  ButtonComponent has a templateUrl, include it
-[16:04:34]  ButtonComponent has styleUrls, include them
-[16:04:34] Prepare modules
-[16:04:34] Prepare miscellaneous
-[16:04:34] Process documentation coverage report
-[16:04:34] Generating documentation in export format json
-[16:04:34] Documentation generated in ./ in 0.628 seconds
+[16:10:47] No configuration file found, switching to CLI flags.
+[16:10:47] Using tsconfig file : D:\projects\chromosome\tsconfig.json
+[16:10:47] Including      : D:\projects\chromosome\.gitignore
+[16:10:47] Including      : D:\projects\chromosome\.browserslistrc
+[16:10:47] Including      : D:\projects\chromosome\.editorconfig
+[16:10:47] Including      : D:\projects\chromosome\angular.json
+[16:10:47] Including      : D:\projects\chromosome\documentation.json
+[16:10:47] Including      : D:\projects\chromosome\package-lock.json
+[16:10:47] Including      : D:\projects\chromosome\karma.conf.js
+[16:10:47] Including      : D:\projects\chromosome\README.md
+[16:10:47] Including      : D:\projects\chromosome\package.json
+[16:10:47] Including      : D:\projects\chromosome\tsconfig.app.json
+[16:10:47] Including      : D:\projects\chromosome\build-storybook.log
+[16:10:47] Including      : D:\projects\chromosome\tsconfig.json
+[16:10:47] Including      : D:\projects\chromosome\tsconfig.spec.json
+[16:10:47] Including      : D:\projects\chromosome\.storybook\main.js
+[16:10:47] Including      : D:\projects\chromosome\.storybook\preview.js
+[16:10:47] Including      : D:\projects\chromosome\.storybook\tsconfig.json
+[16:10:47] Ignoring       : D:\projects\chromosome\.storybook\typings.d.ts
+[16:10:47] Including      : D:\projects\chromosome\.vscode\extensions.json
+[16:10:47] Including      : D:\projects\chromosome\.vscode\tasks.json
+[16:10:47] Including      : D:\projects\chromosome\src\favicon.ico
+[16:10:47] Including      : D:\projects\chromosome\src\index.html
+[16:10:47] Including      : D:\projects\chromosome\.vscode\launch.json
+[16:10:47] Including      : D:\projects\chromosome\src\main.ts
+[16:10:47] Including      : D:\projects\chromosome\src\polyfills.ts
+[16:10:47] Including      : D:\projects\chromosome\src\styles.css
+[16:10:47] Including      : D:\projects\chromosome\src\test.ts
+[16:10:47] Including      : D:\projects\chromosome\src\app\app.component.ts
+[16:10:47] Including      : D:\projects\chromosome\src\assets\.gitkeep
+[16:10:47] Including      : D:\projects\chromosome\src\app\app.module.ts
+[16:10:47] Including      : D:\projects\chromosome\src\environments\environment.prod.ts
+[16:10:47] Including      : D:\projects\chromosome\src\environments\environment.ts
+[16:10:47] Including      : D:\projects\chromosome\src\assets\icons\archive.svg
+[16:10:47] Including      : D:\projects\chromosome\src\assets\icons\clock.svg
+[16:10:47] Including      : D:\projects\chromosome\src\assets\style\global.css
+[16:10:47] Including      : D:\projects\chromosome\src\assets\style\colors.css
+[16:10:47] Including      : D:\projects\chromosome\src\assets\icons\compass.svg
+[16:10:47] Including      : D:\projects\chromosome\src\assets\style\reset.css
+[16:10:47] Including      : D:\projects\chromosome\src\app\button\button.component.css
+[16:10:47] Including      : D:\projects\chromosome\src\assets\style\shadow.css
+[16:10:47] Including      : D:\projects\chromosome\src\app\button\button.stories.ts
+[16:10:47] Including      : D:\projects\chromosome\src\app\button\button.component.ts
+[16:10:47] Including      : D:\projects\chromosome\src\assets\style\typography.css
+[16:10:47] Including      : D:\projects\chromosome\src\app\button\button.component.html
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\020e70e407f29a45e6844ac3c15cc6a7.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\0534140b86e96fb09575a048427ec6b9.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\02c6976433a8d65dc051e7163d8a674d.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\0597f441f2a47ba7cd7ecfd4ad1ac2aa.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\0b22196af9b7ac4c9f4babfc0b2ca853.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\0e20da7b8a1baef617af4ec4fbf154fc.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\0261b02da46d1fee33f2780edfb1a13b.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\0f088a8c3b8b9fc9457f9840c0d070d5.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\10e9fd0e29fb4936cac2783755e0d5ff.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\11d6f65c9f5d70e9fed0bb5c8300c1ae.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\1235d754bb2c25975d5b93a4f6e82b87.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\14eabb30fb8adcb72e3f72fc9fa07508.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\15b4c2499d79ee2decd5839e240f499a.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\15a2cd7fee6d21cc731a0ef132eddb89.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\163ba2d6c747cbe664e9e673e9ec66e2.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\13dc28177128c8d368650e54df8af28e.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\121f783993ebf32184608f904b0cb982.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\190e382fe52c87e6202056997d0e91dc.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\1b17e336543458a771627dbb62c2bdcf.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\1ef48d73b45599f13fb77eeff866c940.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\1c1828a1ec3d32858eabe4b91afb72e4.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\220ebf08d1347529a5ad1c65fec1534a.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\2b179c6f4c1fb3834cbf283bf6dcbdc0.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\25ad94f960de89a3e73779b185d5f048.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\22f9d0fcf6133fe0fc20f37ffc72c54e.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\2c337f33bb743ad26449d83780c5dae9.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\2ed3e54622f094034d5c7048c3bca204.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\2e20ae96d0fd22b46961cc4bd38b37f1.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\31fab701aebfea8a6ba3e866c2d42f3f.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\338439a251967ecb112aa80ebf690798.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\2fe0cb320f3c42f4ab66d08050eb2e1e.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\3545250a54d0c6818d633894cbe07116.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\3908928be65cc1b2e52348b66b10249a.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\387e800e542805a67fb6d9973e63736d.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\396855a7b92a913f80aaf2cb9139a15b.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\38ab5a138d770a12e01840198f068758.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\3e3866198e346cdb5619dc2f441c274f.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\3b1d166da6319095270d3bd411ecd6aa.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\3f8cbe448e59f91a694ee3ce7bb65371.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\417ba109ff38113edeb819e73ffde9b1.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\3f952bed8ccac00e31ecd5f8405956b0.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\40b706804bf10244aedf9ddaf1a94b35.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\425b6f0ae5f427b64ae2200348734814.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\42374e97c0b182e485a46048fdb4c9dd.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\46cf2dfbe10925cae2e8dbbafa70a4fe.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\4834dc1dd404de7fcf2110c3d1d02029.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\46a14a3db76ad52765b12263607fbc74.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\48e0042fbcd7ce82d31c9af8f5ee5aec.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\49fe37854fd00f845ad739269c731398.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\493b7e3e0fcd8f06a7fffb9fdf1076bc.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\4cdeafe46961934df3ba3f724adceeaa.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\4ac26e3c053f1f3466c8e0ac3c27e054.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\4c2941bb77bade2ff7e50da9fef50ab4.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\4dd659f4364861f83174df1c31f8e80b.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\4e281f03c74558c723a094bcc80f0faa.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\5636cc88d69907a6096511bd91d7648f.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\56da16c9e210048a95d1f25eb09feb3a.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\55d42bf264408d88289a352e06ece088.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\5703f3aaf1aee03c2969b509e92c9dd2.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\56011017f61c4f1397f11874a8e7814c.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\578900c46f6ca217e675901e5146c18b.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\5bb887f597e3dbbc9dfd24b83b8ade69.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\5c2fd4f819bc1bda883ee2a547a6c53d.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\578ece42dc97c08fd7f65c2fcd34e159.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\5a574c2180dfbb8b2ec146b6a8985841.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\6136ea8f8c85d5e6319a17b8cc5b750b.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\5c445aad446b060fff8035a06022320e.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\61e4467b0a4958f0be76e9f3f6d84de0.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\655e5c7493642b74caad12e3ddc41be4.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\655006f166bac93c4b764c3bce495309.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\6a12d6da9bc9d212b04fa939bb82bdc9.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\6a288fa7259f54330ebb78fe027593d1.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\6a3ad04348cc4ce4cb15ce6751f448ec.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\69e7151be5abf98a2704faec5407e54e.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\700e611d9bb66ef583fa94150851e7e2.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\6fbb3f04101c1dd4ff4ab6865aacd938.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\738af15173e5450097694dc14713cce8.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\6b103aa76f0a03d3312ec892f596beb9.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\75ac7705c958ef127609ce3a56caac8d.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\75ba5ce5bc93abd009e23372d289a587.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\704a13906535ce109cb1559a0ac567ba.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\766e44278d5cf1cd0774a2ecc81e3647.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\78a66bf829c0bf8542d53ceb9ff308ed.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\78a9abfca4093b97ea3c10628b27b9a3.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\7cb841d4918b3c19bd9f613b045fee62.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\7af2ef53abd14902db08de9adf2cb1ab.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\83974a9a091e0ad72a61d3a532e0125c.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\7cce13086253ce5db9c3002e1d920745.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\7d7b2abff6cd26e73ba6e7732b35c449.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\832a5e0baa181bff74551351ecf9b8d0.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\88886b284d35d9373a101862dd24406b.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\8c04c75569030cf3985dcddacf30c9bf.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\86fb84f24b1868b07f1542059a695895.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\8c6275754bfa2f219a022d499edaa491.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\8914bf66f0f3769091f25f52c430aa8d.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\8ee9564256a20ee5b91164191a996785.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\8fc6ff7223cff5b056549535e33b4291.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\910f0899a539b8950e2b6bbdd482dcf5.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\93ce0ed66f6075254a17168a19cb044b.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\96988f4c5c563034b0a3a087c04086c3.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\9a5be09fed62ce657c5fa6d8e973970d.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\97b0e60bc627525e39744d4a6072503d.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\9ac7370b5ebef179d70140f897511e70.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\9694c1766c412215f7313b9618caf577.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\959e363a40c483bc553641c4ab775480.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\9e2ec7e40491ec2003d56a4cf3064eda.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\9f8f3e0f220484b1b729f4850e85a8ec.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\a25c17f36660a7468002677ae89d755b.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\ab98e409983a91e0c136756fee9112ae.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\a257e9fef162dfa58106c21a46721767.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\adb566f6371ebc5dee3b7ec8251e0bd8.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\ad4715a897ef653a0cef0c080647edc0.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\a04bebe5fd2fbf9ff6831306ef980353.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\adbaa44bb142dc266340cd216b87162b.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\b026d896d9e7ae70a6f7994758efd4f5.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\afe2659926e10a95130fa9a729608a92.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\ae75f3d75a5b1a35c00d552298bac229.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\b09a255397fd9b260b9daaef59f3245f.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\b44cbd5a6a39de2f0d1b1d9c4222eb23.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\b55e59357cf356713866ed750fd30646.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\b94c3abd783f060f4becfa16358be553.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\b93fbfea378e06b657874642aee80245.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\b8d884908d0f28a391652b484d2e0dc0.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\bb5daa902486fc20de4d3d86f24dd168.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\bb68e437ce16991246258a03e99d6145.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\bbee758e81f17535b1901826729fed6e.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\b172cbb9f72cea67feb35826f084c37e.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\bc20a951ec9114c8f679766c88d13d30.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\bc232f85797303098fda93b5899d03b8.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\bfbfdf397e7d7ee15ae589c3288931e9.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\be00f7e55bcf3d4787d7fc0d63b0d768.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\bd2a1ea6b25f193e6dc2b169dd03f040.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\c2122ac4fecc0bde557bddfde0c068cf.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\c2ee4dab4e895c50697870cda21064c4.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\c9c7af8c55321bfb0f71b3f5f10dee65.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\c71b1878808e963c48aea1716eed4410.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\cbfe04a642cc4a9a94521356ae2784e5.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\cba0cceab6c73e358db1e037dc8611f9.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\cca35fc1a4d9c74bdd266931e13b3e66.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\cd0f1fca65834f2ada85e24f5ad8e4f5.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\ccf7319462c75e2710d34fa1901e628f.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\cfa102472bbf5d35dac2678aea31b2ac.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\cde04feb11564ef1c7f5b131999629dd.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\d02e40b8da46de6360a7f70ad9ec4c61.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\d031bc486d1c55c4b0521e6add888a3a.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\d03917120752f7057e456ec11f25aede.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\d3e6dce6e8e02397f4b74c6d9b11f559.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\d182d29451a3253e151edcec97d0c685.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\d82543fa277b59dc13ab5a5b75ee2f3d.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\d422e08140645fa3795b40c8e8049073.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\d91e4817e7b7e2aa021f8493a4e5e8c6.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\da52e06f9ef2bb11265878d09ef95099.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\ddee4489eee1ae72dd157f7679629921.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\daf34e2b7e294d858be0f99cdc28a089.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\df5ae26c4d93f9d555a000db0e3a9fbb.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\db158049d10679e6aed6b214538595af.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\df3b9816d469e083c0da11513e41f687.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\df1976aa6dfeedf5871e1e649ad0b11c.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\e2948f63f38455557f399d407023e9f6.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\e253abe869ddb4f7e82bc5a254a8330d.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\eddbdcff96ff52ff499d6129bab1382b.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\e354d41d0eb3b9afe3f66299e5c190fd.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\e4d5681334ae632d2b4c81dcf541e8e0.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\ef4af0c80b20a4a1784e393911cc70c5.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\ed3563897d930e5ab1dd3fc35cbe6333.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\f2ee8f44de27507a2e265b072951a36c.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\f1e7df87a297c5efeb3ac30656fa7e0f.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\f2a5caf32eb0f3e48ae068f38037ee6a.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\f3477b3c7efd9c2bdffbe887d0da9695.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\f69bf192bb53a349499c2b0406b3d0d6.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\f500c56c94cc426494a98831c7224279.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\fd13ab659f17a1a96a062b5bc37304cd.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\ffc60c77765b51fe5041726cbc4a8876.json
+[16:10:47] Including      : D:\projects\chromosome\.angular\cache\13.3.0\babel-webpack\fb56f6909fcdd68e85d8f83ae7bae0dd.json
+[16:10:47] Searching package.json file
+[16:10:47] package.json file found
+[16:10:47] Processing package.json dependencies
+[16:10:47] Searching README.md, CHANGELOG.md, CONTRIBUTING.md, LICENSE.md, TODO.md files
+[16:10:47] README.md file found
+[16:10:47] Error during D:\projects\chromosome\CHANGELOG read
+[16:10:47] Continuing without CHANGELOG.md file
+[16:10:47] Error during D:\projects\chromosome\CONTRIBUTING read
+[16:10:47] Continuing without CONTRIBUTING.md file
+[16:10:47] Error during D:\projects\chromosome\LICENSE read
+[16:10:47] Continuing without LICENSE.md file
+[16:10:47] Error during D:\projects\chromosome\TODO read
+[16:10:47] Continuing without TODO.md file
+[16:10:47] Get dependencies data
+[16:10:47] parsing        : D:/projects/chromosome/src/main.ts
+[16:10:47] parsing        : D:/projects/chromosome/src/polyfills.ts
+[16:10:47] parsing        : D:/projects/chromosome/src/test.ts
+[16:10:47] found          : require
+[16:10:47] found          : context
+[16:10:47] parsing        : D:/projects/chromosome/src/app/app.component.ts
+[16:10:47] found          : AppComponent
+[16:10:47] parsing        : D:/projects/chromosome/src/app/app.module.ts
+[16:10:47] found          : AppModule
+[16:10:47]                : - imports:
+[16:10:47]                : 	- BrowserModule
+[16:10:47]                : 	- CommonModule
+[16:10:47]                : 	- AngularSvgIconModule
+[16:10:47]                : - declarations:
+[16:10:47]                : 	- AppComponent
+[16:10:47]                : 	- ButtonComponent
+[16:10:47]                : - bootstrap:
+[16:10:47]                : 	- AppComponent
+[16:10:47] parsing        : D:/projects/chromosome/src/environments/environment.prod.ts
+[16:10:47] found          : environment
+[16:10:47] parsing        : D:/projects/chromosome/src/environments/environment.ts
+[16:10:47] found          : environment
+[16:10:47] parsing        : D:/projects/chromosome/src/app/button/button.stories.ts
+[16:10:47] found          : Template
+[16:10:47] found          : Primary
+[16:10:47] found          : Secondary
+[16:10:47] found          : Tertiary
+[16:10:47] found          : Ghost
+[16:10:47] parsing        : D:/projects/chromosome/src/app/button/button.component.ts
+[16:10:47] found          : ButtonType
+[16:10:47] found          : ButtonComponent
+[16:10:47] -------------------
+[16:10:47] Project statistics 
+[16:10:47] - files      : 216
+[16:10:47] - module     : 1
+[16:10:47] - component  : 2
+[16:10:47] -------------------
+[16:10:47] Prepare components
+[16:10:47]  ButtonComponent has a templateUrl, include it
+[16:10:47]  ButtonComponent has styleUrls, include them
+[16:10:47] Prepare modules
+[16:10:47] Prepare miscellaneous
+[16:10:47] Process documentation coverage report
+[16:10:47] Generating documentation in export format json
+[16:10:47] Documentation generated in ./ in 1.107 seconds
 info @storybook/angular v6.5.0-alpha.56
 info 
-info => Cleaning outputDir: C:\\Users\\Jeremie\\AppData\\Local\\Temp\\chromatic--28088-4JywnMNCILxA
+info => Cleaning outputDir: C:\\Users\\Jeremie\\AppData\\Local\\Temp\\chromatic--27008-zzQrMFCOAbPD
 info => Loading presets
-info => Copying static files: D:\projects\chromosome\src\assets at C:\Users\Jeremie\AppData\Local\Temp\chromatic--28088-4JywnMNCILxA\
+info => Copying static files: D:\projects\chromosome\src\assets at C:\Users\Jeremie\AppData\Local\Temp\chromatic--27008-zzQrMFCOAbPD\
 info => Compiling manager..
 info => Compiling preview..
 info Addon-docs: using MDX1
@@ -362,37 +431,31 @@ info => Using default Webpack5 setup
 <s> [webpack.Progress] 10% building 0/6 entries 2/6 dependencies 0/2 modules
 <s> [webpack.Progress] 10% building import loader ./node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js
 <s> [webpack.Progress] 10% building import loader ./node_modules/babel-loader/lib/index.js
-<s> [webpack.Progress] 10% building 0/6 entries 3/7 dependencies 0/3 modules
+<s> [webpack.Progress] 10% building 0/6 entries 5/7 dependencies 0/5 modules
 <s> [webpack.Progress] 10% building import loader ./node_modules/@ngtools/webpack/src/ivy/index.js
 <s> [webpack.Progress] 10% building 0/6 entries 5/7 dependencies 0/5 modules
-<s> [webpack.Progress] 10% building 0/6 entries 55/100 dependencies 0/23 modules
-<s> [webpack.Progress] 10% building 0/6 entries 84/106 dependencies 0/46 modules
-<s> [webpack.Progress] 10% building 0/6 entries 162/189 dependencies 8/77 modules
-<s> [webpack.Progress] 19% building 1/6 entries 162/189 dependencies 9/77 modules
-<s> [webpack.Progress] 28% building 2/6 entries 293/332 dependencies 34/107 modules
-<s> [webpack.Progress] 28% building 2/6 entries 500/566 dependencies 61/183 modules
+<s> [webpack.Progress] 10% building 0/6 entries 5/8 dependencies 0/5 modules
+<s> [webpack.Progress] 10% building 0/6 entries 94/155 dependencies 1/55 modules
+<s> [webpack.Progress] 19% building 1/6 entries 156/190 dependencies 9/72 modules
+<s> [webpack.Progress] 28% building 2/6 entries 269/334 dependencies 35/89 modules
+<s> [webpack.Progress] 28% building 2/6 entries 316/379 dependencies 37/128 modules
 <s> [webpack.Progress] 28% building import loader ./node_modules/@storybook/source-loader/dist/cjs/index.js
-<s> [webpack.Progress] 28% building 2/6 entries 673/726 dependencies 80/231 modules
-<s> [webpack.Progress] 28% building 2/6 entries 818/1100 dependencies 85/266 modules
-<s> [webpack.Progress] 28% building 2/6 entries 1300/1379 dependencies 135/344 modules
-<s> [webpack.Progress] 37% building 3/6 entries 1441/1789 dependencies 176/363 modules
-<s> [webpack.Progress] 37% building 3/6 entries 1500/1793 dependencies 179/386 modules
-<s> [webpack.Progress] 37% building 3/6 entries 1600/1812 dependencies 189/393 modules
-<s> [webpack.Progress] 37% building 3/6 entries 1844/2000 dependencies 214/442 modules
-<s> [webpack.Progress] 37% building 3/6 entries 2320/2400 dependencies 297/498 modules
-<s> [webpack.Progress] 46% building 4/6 entries 2464/2521 dependencies 330/512 modules
-<s> [webpack.Progress] 46% building 4/6 entries 2528/2600 dependencies 336/545 modules
-<s> [webpack.Progress] 46% building 4/6 entries 2576/2800 dependencies 354/553 modules
-<s> [webpack.Progress] 46% building 4/6 entries 3175/3288 dependencies 400/787 modules
-<s> [webpack.Progress] 46% building 4/6 entries 3500/3525 dependencies 425/832 modules
-<s> [webpack.Progress] 46% building 4/6 entries 3900/4227 dependencies 442/993 modules
-<s> [webpack.Progress] 46% building 4/6 entries 4400/4481 dependencies 606/1120 modules
-<s> [webpack.Progress] 46% building 4/6 entries 4483/4500 dependencies 610/1162 modules
-<s> [webpack.Progress] 46% building 4/6 entries 4800/4884 dependencies 622/1174 modules
-<s> [webpack.Progress] 46% building 4/6 entries 5420/5500 dependencies 713/1268 modules
-<s> [webpack.Progress] 46% building 4/6 entries 5500/5668 dependencies 758/1268 modules
-<s> [webpack.Progress] 46% building 4/6 entries 6071/6100 dependencies 1252/1392 modules
-<s> [webpack.Progress] 55% building 5/6 entries 6459/6464 dependencies 1444/1467 modules
+<s> [webpack.Progress] 28% building 2/6 entries 701/786 dependencies 86/232 modules
+<s> [webpack.Progress] 28% building 2/6 entries 1083/1200 dependencies 120/310 modules
+<s> [webpack.Progress] 37% building 3/6 entries 1429/1731 dependencies 176/360 modules
+<s> [webpack.Progress] 37% building 3/6 entries 1600/1784 dependencies 190/392 modules
+<s> [webpack.Progress] 37% building 3/6 entries 1750/1800 dependencies 197/437 modules
+<s> [webpack.Progress] 37% building 3/6 entries 1784/1900 dependencies 206/438 modules
+<s> [webpack.Progress] 37% building 3/6 entries 2392/2455 dependencies 307/500 modules
+<s> [webpack.Progress] 46% building 4/6 entries 2424/2470 dependencies 311/519 modules
+<s> [webpack.Progress] 46% building 4/6 entries 2559/2923 dependencies 333/600 modules
+<s> [webpack.Progress] 46% building 4/6 entries 3435/3500 dependencies 410/826 modules
+<s> [webpack.Progress] 46% building 4/6 entries 3853/4200 dependencies 461/901 modules
+<s> [webpack.Progress] 46% building 4/6 entries 4600/4621 dependencies 678/1178 modules
+<s> [webpack.Progress] 46% building 4/6 entries 5000/5051 dependencies 709/1211 modules
+<s> [webpack.Progress] 46% building 4/6 entries 5497/5600 dependencies 923/1286 modules
+<s> [webpack.Progress] 46% building 4/6 entries 6247/6300 dependencies 1366/1432 modules
+<s> [webpack.Progress] 55% building 5/6 entries 6465/6468 dependencies 1450/1468 modules
 <s> [webpack.Progress] 65% building 6/6 entries 6489/6489 dependencies 1475/1475 modules
 <s> [webpack.Progress] 65% building
 <s> [webpack.Progress] 69% building finish
@@ -494,17 +557,17 @@ info => Using default Webpack5 setup
 <s> [webpack.Progress] 92% sealing asset processing copy-webpack-plugin
 <s> [webpack.Progress] 92% sealing asset processing PersistentChildCompilerSingletonPlugin
 <s> [webpack.Progress] 92% sealing asset processing TerserPlugin
-info => Manager built (55 s)
+info => Manager built (45 s)
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.css generate SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.css generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.9686a667.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.9686a667.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.8a60c546.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.8a60c546.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin app-button-button-stories.1ed7fd69.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin app-button-button-stories.1ed7fd69.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.4e37ce7b.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.4e37ce7b.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.8a6973c6.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.8a6973c6.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin app-button-button-stories.fe184494.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin app-button-button-stories.fe184494.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 366.93fa71b9.iframe.bundle.js generate SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 366.93fa71b9.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 565.318acc24.iframe.bundle.js generate SourceMap
@@ -550,12 +613,12 @@ info => Manager built (55 s)
 <s> [webpack.Progress] 92% sealing asset processing HtmlWebpackPlugin
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.66e71ff9.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.66e71ff9.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin runtime~main.b2cfcfd6.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin runtime~main.b2cfcfd6.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin app-button-button-stories.5c200507.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin app-button-button-stories.5c200507.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.f08f91e4.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.f08f91e4.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin runtime~main.8d559a14.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin runtime~main.8d559a14.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin app-button-button-stories.2c393afd.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin app-button-button-stories.2c393afd.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 747.9ad6f520.iframe.bundle.js generate SourceMap
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 747.9ad6f520.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 345.d99956b5.iframe.bundle.js generate SourceMap
@@ -602,7 +665,7 @@ info => Manager built (55 s)
 <s> [webpack.Progress] 99% cache begin idle
 <s> [webpack.Progress] 100% 
 
-info => Preview built (1.02 min)
+info => Preview built (51 s)
 WARN D:/projects/chromosome/src/app/app.component.ts is part of the TypeScript compilation but it's unused.
 WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
 WARN D:/projects/chromosome/src/app/app.module.ts is part of the TypeScript compilation but it's unused.
@@ -623,13 +686,13 @@ WARN   709.055bf5c6.iframe.bundle.js (2.77 MiB)
 WARN entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
 WARN Entrypoints:
 WARN   main (2.8 MiB)
-WARN       runtime~main.b2cfcfd6.iframe.bundle.js
+WARN       runtime~main.8d559a14.iframe.bundle.js
 WARN       709.055bf5c6.iframe.bundle.js
 WARN       main.css
-WARN       main.66e71ff9.iframe.bundle.js
+WARN       main.f08f91e4.iframe.bundle.js
 WARN 
 <s> [webpack.Progress] 99% cache shutdown
 <s> [webpack.Progress] 99% cache shutdown
 <s> [webpack.Progress] 100% 
 
-info => Output directory: C:\\Users\\Jeremie\\AppData\\Local\\Temp\\chromatic--28088-4JywnMNCILxA
+info => Output directory: C:\\Users\\Jeremie\\AppData\\Local\\Temp\\chromatic--27008-zzQrMFCOAbPD
