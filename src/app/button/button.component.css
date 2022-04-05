@@ -1,0 +1,73 @@
+.chromosome-button {
+  border: 0;
+  padding: .75rem 1.25rem;
+  min-width: 10rem;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  background-size: 1px 200px;  
+  transition: all .150s ease-in-out;
+}
+
+.chromosome-button:hover {
+  cursor: pointer;
+}
+
+.chromosome-button.primary {
+  background: var(--primary-button-enabled);
+  color: #fff;
+}
+
+.chromosome-button.primary:hover {
+  box-shadow: var(--button-hover-shadow);
+  background: var(--primary-button-hover);
+  background-position: 100%;
+}
+
+.chromosome-button.primary:focus {
+  background:var(--primary-button-focus);
+}
+
+.chromosome-button.secondary {
+  background: var(--secondary-button-enabled);
+  color: #fff;
+}
+
+.chromosome-button.secondary:hover {
+  box-shadow: var(--button-hover-shadow);
+  background: var(--secondary-button-hover);
+  color: #fff;
+}
+
+.chromosome-button.secondary:focus {
+  color: #fff;
+}
+
+.chromosome-button.tertiary {
+  color: #fff;
+  background-color: var(--tertiary-button-enabled);
+}
+
+.chromosome-button.tertiary:hover {
+  background-color: var(--tertiary-button-hover);
+  box-shadow: var(--button-hover-shadow);
+}
+
+.chromosome-button.tertiary:focus {
+  background-color: var(--tertiary-button-focus);
+}
+
+.chromosome-button.ghost {
+  color: var(--white);
+  border: 2px solid var(--ghost-button-enabled);
+}
+
+.chromosome-button.ghost:hover {
+  border-color: 2px solid var(--ghost-button-hover);
+}
+
+.chromosome-button.ghost:focus {
+  border-color: 2px solid var(--ghost-button-focus);
+}
+
