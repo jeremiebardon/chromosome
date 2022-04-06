@@ -1,14 +1,14 @@
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { AppComponent } from './app.component';
-
-import ButtonComponent from './button/button.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
-  declarations: [AppComponent, ButtonComponent],
-  imports: [BrowserModule, CommonModule, AngularSvgIconModule.forRoot()],
+  declarations: [AppComponent],
+  imports: [BrowserModule, CommonModule, SharedModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

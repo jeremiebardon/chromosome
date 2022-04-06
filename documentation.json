@@ -1,7 +1,21 @@
 {
     "pipes": [],
     "interfaces": [],
-    "injectables": [],
+    "injectables": [
+        {
+            "name": "DialogService",
+            "id": "injectable-DialogService-9337229e384996685e673c03dab0affafda562b205a950282603d6352af901ae6a602719353f87d8b1d465dae5b1b09be069b8cef53475c3f7d4c807aae55b47",
+            "file": "src/app/shared/services/dialog.sevice.ts",
+            "properties": [],
+            "methods": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\r\n\r\n@Injectable()\r\nexport class DialogService {\r\n  /* constructor(\r\n    private injector: Injector,\r\n    private appRef: ApplicationRef,\r\n    private componentFactoryResolver: ComponentFactoryResolver,\r\n  ) { }\r\n\r\n  private compile(params) {\r\n    const componentRef = this.componentFactoryResolver\r\n      .resolveComponentFactory(DialogComponent)\r\n      .create(this.injector);\r\n\r\n    componentRef.instance.title = params.title;\r\n    componentRef.instance.message = params.message;\r\n    componentRef.instance.layout = params.template;\r\n    componentRef.instance.singleAction = params.singleAction;\r\n    componentRef.instance.confirmation = params.confirmButtonToken;\r\n    componentRef.instance.cancelation = params.cancelButtonToken;\r\n\r\n    if (params.confirmCallback) {\r\n      componentRef.instance.confirmed.subscribe(() => {\r\n        params.confirmCallback();\r\n      });\r\n    }\r\n\r\n    if (params.cancelCallback) {\r\n      componentRef.instance.cancelled.subscribe(() => {\r\n        params.cancelCallback();\r\n      });\r\n    }\r\n\r\n    this.appRef.attachView(componentRef.hostView);\r\n\r\n    const domElem = (componentRef.hostView as EmbeddedViewRef<any>)\r\n      .rootNodes[0] as HTMLElement;\r\n\r\n    document.body.appendChild(domElem);\r\n  }\r\n\r\n  show(\r\n    title: string,\r\n    message: string,\r\n    confirmCallback: Function,\r\n    cancelCallback?: Function,\r\n    confirmButtonToken: string = 'common.actions.proceed',\r\n    singleAction: boolean = false,\r\n    cancelButtonToken: string = 'common.actions.cancel',\r\n  ) {\r\n    this.compile({ title, message, confirmCallback, cancelCallback, confirmButtonToken, singleAction, cancelButtonToken });\r\n  }\r\n\r\n  showTemplate(\r\n    template: TemplateRef<any>,\r\n    confirmCallback: Function,\r\n    cancelCallback?: Function,\r\n    confirmButtonToken: string = 'common.actions.proceed',\r\n    singleAction: boolean = false,\r\n    cancelButtonToken: string = 'common.actions.cancel',\r\n  ) {\r\n    this.compile({ template, confirmCallback, cancelCallback, confirmButtonToken, singleAction, cancelButtonToken });\r\n  }\r\n\r\n  // Show dialog and return an observable with the button clicked (true/false)\r\n  confirm(title: string, message?: string, confirmButtonToken = 'common.actions.proceed'): Subject<any> {\r\n    const response$ = new Subject();\r\n\r\n    this.show(\r\n      title,\r\n      message,\r\n      () => {\r\n        response$.next(true);\r\n        response$.complete();\r\n      },\r\n      () => {\r\n        response$.next(false);\r\n        response$.complete();\r\n      },\r\n      confirmButtonToken,\r\n    );\r\n\r\n    return response$;\r\n  } */\r\n}\r\n",
+            "type": "injectable"
+        }
+    ],
     "guards": [],
     "interceptors": [],
     "classes": [],
@@ -9,7 +23,7 @@
     "components": [
         {
             "name": "AppComponent",
-            "id": "component-AppComponent-35ddb1f2c6758eca271cc86c2bc50704b920c18d87845ec6399f373e614dab831db74cf7ba4e4b6cfeba39f0c92ba76e04a7d9b35adf09b96a4590efe373dd3a",
+            "id": "component-AppComponent-e07cbadb32e2217b79c3a88dae7d17ab6bcb2a41d56feef318aad1c47f1dba1b6e0f979d28d800d0d94807a6bade289ee3760379fec1e3bd10d23bed3d231990",
             "file": "src/app/app.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -19,6 +33,7 @@
             "selector": "app-root",
             "styleUrls": [],
             "styles": [],
+            "template": "<div>\n  <chromosome-icon\n    [iconUrl]=\"'../assets/icons/archive.svg'\"\n  ></chromosome-icon>\n</div>\n",
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [],
@@ -32,7 +47,7 @@
                     "type": "string",
                     "optional": false,
                     "description": "",
-                    "line": 7
+                    "line": 14
                 }
             ],
             "methodsClass": [],
@@ -43,15 +58,55 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n})\nexport class AppComponent {\n  title = 'chromosome';\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  template: `\n    <div>\n      <chromosome-icon\n        [iconUrl]=\"'../assets/icons/archive.svg'\"\n      ></chromosome-icon>\n    </div>\n  `,\n})\nexport class AppComponent {\n  title = 'chromosome';\n}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": ""
         },
         {
+            "name": "AvatarComponent",
+            "id": "component-AvatarComponent-5ec24d6b8dac73d5e6d60b40903b9a87c2deee227f8d799fc859316c4bb7972794ae5a5370cba5554eb46524aa24cf1373aed71275b1a2ad497fc5bc78af895b",
+            "file": "src/app/shared/components/avatar/avatar.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "chromosome-avatar",
+            "styleUrls": [
+                "./avatar.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./avatar.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'chromosome-avatar',\r\n  templateUrl: './avatar.component.html',\r\n  styleUrls: ['./avatar.component.css'],\r\n})\r\nexport default class AvatarComponent {}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./avatar.component.css"
+                }
+            ],
+            "stylesData": "",
+            "templateData": ""
+        },
+        {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-18e4f7b4d91ea81d447362f4d6c00acd9fcce7ec317386d591b6ca62da9cb92f8cc69da0305488985ef0f68e15766bc853bb01a94ae98452cef6b3012b8af5cc",
-            "file": "src/app/button/button.component.ts",
+            "id": "component-ButtonComponent-b771804d852a4d213947d8e87fd93390e52708226933926e037aacd68a162533bc3d4cb89492261f66223be5a849c5f513195840e65c9798f9503c10ad877d86",
+            "file": "src/app/shared/components/button/button.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
@@ -74,15 +129,15 @@
                     "deprecationMessage": "",
                     "jsdoctags": [
                         {
-                            "pos": 574,
-                            "end": 588,
+                            "pos": 541,
+                            "end": 555,
                             "flags": 4227072,
                             "modifierFlagsCache": 0,
                             "transformFlags": 0,
                             "kind": 325,
                             "tagName": {
-                                "pos": 575,
-                                "end": 583,
+                                "pos": 542,
+                                "end": 550,
                                 "flags": 4227072,
                                 "modifierFlagsCache": 0,
                                 "transformFlags": 0,
@@ -94,7 +149,7 @@
                     ],
                     "rawdescription": "\n\nButton contents\n\n",
                     "description": "<p>Button contents</p>\n",
-                    "line": 29,
+                    "line": 27,
                     "type": "string",
                     "decorators": []
                 },
@@ -105,7 +160,7 @@
                     "deprecationMessage": "",
                     "rawdescription": "\n\nButton size\n",
                     "description": "<p>Button size</p>\n",
-                    "line": 21,
+                    "line": 19,
                     "type": "\"small\" | \"medium\" | \"large\"",
                     "decorators": []
                 },
@@ -116,8 +171,8 @@
                     "deprecationMessage": "",
                     "rawdescription": "\n\nIs this the principal call to action on the page?\n",
                     "description": "<p>Is this the principal call to action on the page?</p>\n",
-                    "line": 15,
-                    "type": "ButtonType",
+                    "line": 13,
+                    "type": "\"primary\" | \"secondary\" | \"tertiary\" | \"ghost\"",
                     "decorators": []
                 }
             ],
@@ -129,7 +184,7 @@
                     "deprecationMessage": "",
                     "rawdescription": "\n\nOptional click handler\n",
                     "description": "<p>Optional click handler</p>\n",
-                    "line": 35,
+                    "line": 33,
                     "type": "EventEmitter<MouseEvent>"
                 }
             ],
@@ -142,11 +197,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, EventEmitter, Input, Output } from '@angular/core';\r\n\r\ntype ButtonType = 'primary' | 'secondary' | 'tertiary' | 'ghost';\r\n\r\n@Component({\r\n  selector: 'chromosome-button',\r\n  templateUrl: './button.component.html',\r\n  styleUrls: ['./button.component.css'],\r\n})\r\nexport default class ButtonComponent {\r\n  /**\r\n   * Is this the principal call to action on the page?\r\n   */\r\n  @Input()\r\n  type: ButtonType = 'primary';\r\n\r\n  /**\r\n   * Button size\r\n   */\r\n  @Input()\r\n  size: 'small' | 'medium' | 'large' = 'medium';\r\n\r\n  /**\r\n   * Button contents\r\n   *\r\n   * @required\r\n   */\r\n  @Input()\r\n  label = 'Button';\r\n\r\n  /**\r\n   * Optional click handler\r\n   */\r\n  @Output()\r\n  onClick: EventEmitter<MouseEvent> = new EventEmitter<MouseEvent>();\r\n\r\n  public get classes(): string[] {\r\n    return ['chromosome-button', `chromosome-button--${this.size}`, this.type];\r\n  }\r\n}\r\n",
+            "sourceCode": "import { Component, EventEmitter, Input, Output } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'chromosome-button',\r\n  templateUrl: './button.component.html',\r\n  styleUrls: ['./button.component.css'],\r\n})\r\nexport default class ButtonComponent {\r\n  /**\r\n   * Is this the principal call to action on the page?\r\n   */\r\n  @Input()\r\n  type: 'primary' | 'secondary' | 'tertiary' | 'ghost' = 'primary';\r\n\r\n  /**\r\n   * Button size\r\n   */\r\n  @Input()\r\n  size: 'small' | 'medium' | 'large' = 'medium';\r\n\r\n  /**\r\n   * Button contents\r\n   *\r\n   * @required\r\n   */\r\n  @Input()\r\n  label = 'Button';\r\n\r\n  /**\r\n   * Optional click handler\r\n   */\r\n  @Output()\r\n  onClick: EventEmitter<MouseEvent> = new EventEmitter<MouseEvent>();\r\n\r\n  public get classes(): string[] {\r\n    return ['chromosome-button', `chromosome-button--${this.size}`, this.type];\r\n  }\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".chromosome-button {\r\n  border: 0;\r\n  padding: .75rem 1.25rem;\r\n  min-width: 10rem;\r\n  background-color: transparent;\r\n  font-weight: 700;\r\n  font-size: 1rem;\r\n  border-radius: 0.5rem;\r\n  background-size: 1px 200px;  \r\n  transition: all .150s ease-in-out;\r\n}\r\n\r\n.chromosome-button:hover {\r\n  cursor: pointer;\r\n}\r\n\r\n.chromosome-button.primary {\r\n  background: var(--primary-button-enabled);\r\n  color: red;\r\n}\r\n\r\n.chromosome-button.primary:hover {\r\n  box-shadow: var(--button-hover-shadow);\r\n  background: var(--primary-button-hover);\r\n  background-position: 100%;\r\n}\r\n\r\n.chromosome-button.primary:focus {\r\n  background:var(--primary-button-focus);\r\n}\r\n\r\n.chromosome-button.secondary {\r\n  background: var(--secondary-button-enabled);\r\n  color: #fff;\r\n}\r\n\r\n.chromosome-button.secondary:hover {\r\n  box-shadow: var(--button-hover-shadow);\r\n  background: var(--secondary-button-hover);\r\n  color: #fff;\r\n}\r\n\r\n.chromosome-button.secondary:focus {\r\n  color: #fff;\r\n}\r\n\r\n.chromosome-button.tertiary {\r\n  color: #fff;\r\n  background-color: var(--tertiary-button-enabled);\r\n}\r\n\r\n.chromosome-button.tertiary:hover {\r\n  background-color: var(--tertiary-button-hover);\r\n  box-shadow: var(--button-hover-shadow);\r\n}\r\n\r\n.chromosome-button.tertiary:focus {\r\n  background-color: var(--tertiary-button-focus);\r\n}\r\n\r\n.chromosome-button.ghost {\r\n  color: var(--white);\r\n  border: 2px solid var(--ghost-button-enabled);\r\n}\r\n\r\n.chromosome-button.ghost:hover {\r\n  border-color: 2px solid var(--ghost-button-hover);\r\n}\r\n\r\n.chromosome-button.ghost:focus {\r\n  border-color: 2px solid var(--ghost-button-focus);\r\n}\r\n\r\n",
+                    "data": ".chromosome-button {\r\n  border: 0;\r\n  padding: .75rem 1.25rem;\r\n  min-width: 10rem;\r\n  background-color: transparent;\r\n  font-weight: 700;\r\n  font-size: 1rem;\r\n  border-radius: 0.5rem;\r\n  background-size: 1px 200px;  \r\n  transition: all .150s ease-in-out;\r\n}\r\n\r\n.chromosome-button:hover {\r\n  cursor: pointer;\r\n}\r\n\r\n.chromosome-button.primary {\r\n  background: var(--primary-button-enabled);\r\n  color: #fff;\r\n}\r\n\r\n.chromosome-button.primary:hover {\r\n  box-shadow: var(--button-hover-shadow);\r\n  background: var(--primary-button-hover);\r\n  background-position: 100%;\r\n}\r\n\r\n.chromosome-button.primary:focus {\r\n  background:var(--primary-button-focus);\r\n}\r\n\r\n.chromosome-button.secondary {\r\n  background: var(--secondary-button-enabled);\r\n  color: #fff;\r\n}\r\n\r\n.chromosome-button.secondary:hover {\r\n  box-shadow: var(--button-hover-shadow);\r\n  background: var(--secondary-button-hover);\r\n  color: #fff;\r\n}\r\n\r\n.chromosome-button.secondary:focus {\r\n  color: #fff;\r\n}\r\n\r\n.chromosome-button.tertiary {\r\n  color: #fff;\r\n  background-color: var(--tertiary-button-enabled);\r\n}\r\n\r\n.chromosome-button.tertiary:hover {\r\n  background-color: var(--tertiary-button-hover);\r\n  box-shadow: var(--button-hover-shadow);\r\n}\r\n\r\n.chromosome-button.tertiary:focus {\r\n  background-color: var(--tertiary-button-focus);\r\n}\r\n\r\n.chromosome-button.ghost {\r\n  color: var(--white);\r\n  border: 2px solid var(--ghost-button-enabled);\r\n}\r\n\r\n.chromosome-button.ghost:hover {\r\n  border-color: 2px solid var(--ghost-button-hover);\r\n}\r\n\r\n.chromosome-button.ghost:focus {\r\n  border-color: 2px solid var(--ghost-button-focus);\r\n}\r\n\r\n",
                     "styleUrl": "./button.component.css"
                 }
             ],
@@ -158,23 +213,84 @@
                         "name": "classes",
                         "type": "[]",
                         "returnType": "string[]",
-                        "line": 37
+                        "line": 35
                     }
                 }
             },
             "templateData": "<button type=\"button\" (click)=\"onClick.emit($event)\" [ngClass]=\"classes\">\r\n  {{ label }}\r\n</button>"
+        },
+        {
+            "name": "IconComponent",
+            "id": "component-IconComponent-70cd986b329e46e70c83be5fe78c428dc7bdb8040bc77df3039dacb902e26eab3781f399d4b4c5a211c61f9bccc19c81be726008003c46b415cef51cc4cc2809",
+            "file": "src/app/shared/components/icon/icon.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "chromosome-icon",
+            "styleUrls": [
+                "./icon.component.css"
+            ],
+            "styles": [],
+            "template": "<svg-icon [src]=\"iconUrl\" [svgStyle]=\"style\"></svg-icon>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "iconUrl",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nAbsosolute url to icon\n",
+                    "description": "<p>Absosolute url to icon</p>\n",
+                    "line": 13,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "style",
+                    "defaultValue": "{}",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nSvg style\n",
+                    "description": "<p>Svg style</p>\n",
+                    "line": 19,
+                    "type": "object",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'chromosome-icon',\r\n  template: `<svg-icon [src]=\"iconUrl\" [svgStyle]=\"style\"></svg-icon>`,\r\n  styleUrls: ['./icon.component.css'],\r\n})\r\nexport default class IconComponent {\r\n  /**\r\n   * Absosolute url to icon\r\n   */\r\n  @Input()\r\n  iconUrl: string = '';\r\n\r\n  /**\r\n   * Svg style\r\n   */\r\n  @Input()\r\n  style: object = {};\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./icon.component.css"
+                }
+            ],
+            "stylesData": ""
         }
     ],
     "modules": [
         {
             "name": "AppModule",
-            "id": "module-AppModule-a8193a43548b077e73a522247b21c347706a85ee8cbb4868ff098a0c622bdaa1972479a5be9fcea193f6da4064227e7e919c1f2bb0dff959fcf17d7c7c6d7a70",
+            "id": "module-AppModule-db6e8a51553ba5e2fc056653031bc877678cdf35d7cdd7d4df53d8f3faadb1221cb2f28ea723c5480097dd95a7f112196a767042747b7c6f79b42ad6117ad515",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app.module.ts",
             "methods": [],
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\nimport { AngularSvgIconModule } from 'angular-svg-icon';\nimport { AppComponent } from './app.component';\n\nimport ButtonComponent from './button/button.component';\n\n@NgModule({\n  declarations: [AppComponent, ButtonComponent],\n  imports: [BrowserModule, CommonModule, AngularSvgIconModule.forRoot()],\n  providers: [],\n  bootstrap: [AppComponent],\n})\nexport class AppModule {}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { HttpClientModule } from '@angular/common/http';\nimport { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\nimport { AngularSvgIconModule } from 'angular-svg-icon';\nimport { AppComponent } from './app.component';\nimport { SharedModule } from './shared/shared.module';\n\n@NgModule({\n  declarations: [AppComponent],\n  imports: [BrowserModule, CommonModule, SharedModule, HttpClientModule],\n  providers: [],\n  bootstrap: [AppComponent],\n})\nexport class AppModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -185,15 +301,16 @@
                     "elements": [
                         {
                             "name": "AppComponent"
-                        },
-                        {
-                            "name": "ButtonComponent"
                         }
                     ]
                 },
                 {
                     "type": "imports",
-                    "elements": []
+                    "elements": [
+                        {
+                            "name": "SharedModule"
+                        }
+                    ]
                 },
                 {
                     "type": "exports",
@@ -206,6 +323,66 @@
                             "name": "AppComponent"
                         }
                     ]
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "SharedModule",
+            "id": "module-SharedModule-6b26f57588d3054187f5289981bc7bb8fdd9890e9580ce7222d2838a1dff07f6cc3f2b4bbf71f3d0a9b322d9f1a2803e94f8acca5a7fb955f54bd11dd860edab",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/shared/shared.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport ButtonComponent from './components/button/button.component';\nimport { DialogService } from './services/dialog.sevice';\nimport AvatarComponent from './components/avatar/avatar.component';\nimport IconComponent from './components/icon/icon.component';\nimport { AngularSvgIconModule } from 'angular-svg-icon';\n\n@NgModule({\n  declarations: [ButtonComponent, AvatarComponent, IconComponent],\n  imports: [CommonModule, AngularSvgIconModule.forRoot()],\n  exports: [ButtonComponent, AvatarComponent, IconComponent],\n  providers: [DialogService],\n})\nexport class SharedModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": [
+                        {
+                            "name": "DialogService"
+                        }
+                    ]
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "AvatarComponent"
+                        },
+                        {
+                            "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "IconComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "AvatarComponent"
+                        },
+                        {
+                            "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "IconComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
                 },
                 {
                     "type": "classes",
@@ -230,16 +407,6 @@
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/environments/environment.prod.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "object",
-                "defaultValue": "{\n  production: true\n}"
-            },
-            {
-                "name": "environment",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/environments/environment.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -247,10 +414,30 @@
                 "defaultValue": "{\n  production: false\n}"
             },
             {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.prod.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: true\n}"
+            },
+            {
                 "name": "Ghost",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/button/button.stories.ts",
+                "file": "src/app/shared/components/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "IconArchive",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/shared/components/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -260,7 +447,7 @@
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/button/button.stories.ts",
+                "file": "src/app/shared/components/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -279,7 +466,7 @@
                 "name": "Secondary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/button/button.stories.ts",
+                "file": "src/app/shared/components/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -289,17 +476,27 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/button/button.stories.ts",
+                "file": "src/app/shared/components/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "(args) => ({\r\n  props: {\r\n    ...args,\r\n    onClick: action('onClick'),\r\n  },\r\n})"
             },
             {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/shared/components/icon/icon.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "(args) => ({\r\n  props: { ...args },\r\n  argTypes: {\r\n    style: { control: 'object' },\r\n  },\r\n})"
+            },
+            {
                 "name": "Tertiary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/button/button.stories.ts",
+                "file": "src/app/shared/components/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -307,19 +504,7 @@
             }
         ],
         "functions": [],
-        "typealiases": [
-            {
-                "name": "ButtonType",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "\"primary\" | \"secondary\" | \"tertiary\" | \"ghost\"",
-                "file": "src/app/button/button.component.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 186
-            }
-        ],
+        "typealiases": [],
         "enumerations": [],
         "groupedVariables": {
             "src/test.ts": [
@@ -343,18 +528,6 @@
                     "type": "literal type"
                 }
             ],
-            "src/environments/environment.prod.ts": [
-                {
-                    "name": "environment",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/environments/environment.prod.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "object",
-                    "defaultValue": "{\n  production: true\n}"
-                }
-            ],
             "src/environments/environment.ts": [
                 {
                     "name": "environment",
@@ -367,12 +540,24 @@
                     "defaultValue": "{\n  production: false\n}"
                 }
             ],
-            "src/app/button/button.stories.ts": [
+            "src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.prod.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: true\n}"
+                }
+            ],
+            "src/app/shared/components/button/button.stories.ts": [
                 {
                     "name": "Ghost",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/button/button.stories.ts",
+                    "file": "src/app/shared/components/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -382,7 +567,7 @@
                     "name": "Primary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/button/button.stories.ts",
+                    "file": "src/app/shared/components/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -392,7 +577,7 @@
                     "name": "Secondary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/button/button.stories.ts",
+                    "file": "src/app/shared/components/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -402,7 +587,7 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/button/button.stories.ts",
+                    "file": "src/app/shared/components/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -412,35 +597,43 @@
                     "name": "Tertiary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/button/button.stories.ts",
+                    "file": "src/app/shared/components/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
                 }
+            ],
+            "src/app/shared/components/icon/icon.stories.ts": [
+                {
+                    "name": "IconArchive",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/shared/components/icon/icon.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/shared/components/icon/icon.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "(args) => ({\r\n  props: { ...args },\r\n  argTypes: {\r\n    style: { control: 'object' },\r\n  },\r\n})"
+                }
             ]
         },
         "groupedFunctions": {},
         "groupedEnumerations": {},
-        "groupedTypeAliases": {
-            "src/app/button/button.component.ts": [
-                {
-                    "name": "ButtonType",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "\"primary\" | \"secondary\" | \"tertiary\" | \"ghost\"",
-                    "file": "src/app/button/button.component.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 186
-                }
-            ]
-        }
+        "groupedTypeAliases": {}
     },
     "routes": [],
     "coverage": {
-        "count": 7,
+        "count": 9,
         "status": "low",
         "files": [
             {
@@ -453,7 +646,16 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/button/button.component.ts",
+                "filePath": "src/app/shared/components/avatar/avatar.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AvatarComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/components/button/button.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "ButtonComponent",
@@ -462,7 +664,7 @@
                 "status": "very-good"
             },
             {
-                "filePath": "src/app/button/button.stories.ts",
+                "filePath": "src/app/shared/components/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -472,7 +674,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/button/button.stories.ts",
+                "filePath": "src/app/shared/components/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -482,7 +684,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/button/button.stories.ts",
+                "filePath": "src/app/shared/components/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -492,7 +694,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/button/button.stories.ts",
+                "filePath": "src/app/shared/components/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -502,11 +704,49 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/button/button.stories.ts",
+                "filePath": "src/app/shared/components/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "Tertiary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/components/icon/icon.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconComponent",
+                "coveragePercent": 66,
+                "coverageCount": "2/3",
+                "status": "good"
+            },
+            {
+                "filePath": "src/app/shared/components/icon/icon.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "IconArchive",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/components/icon/icon.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/services/dialog.sevice.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "DialogService",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
