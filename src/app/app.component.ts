@@ -2,7 +2,13 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: ` <p>Storybook demo</p> `,
+  template: `
+    <div>
+      <chromosome-icon
+        [iconUrl]="'../assets/icons/archive.svg'"
+      ></chromosome-icon>
+    </div>
+  `,
 })
 export class AppComponent {
   title = 'chromosome';
