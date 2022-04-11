@@ -1,0 +1,5 @@
+@import '@angular/cdk/overlay-prebuilt.css';
+
+.dropdown-panel {
+  width: 100%;
+}

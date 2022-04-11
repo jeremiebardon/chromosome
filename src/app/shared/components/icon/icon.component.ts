@@ -13,8 +13,8 @@ export default class IconComponent {
   iconUrl: string = '';
 
   /**
-   * Svg style
+   * Svg style applied to the element
    */
   @Input()
-  style: object = {};
+  style: any = null;
 }

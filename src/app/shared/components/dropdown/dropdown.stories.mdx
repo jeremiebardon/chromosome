@@ -1,0 +1,114 @@
+import { Story, Meta, ArgsTable, Source, Canvas } from "@storybook/addon-docs";
+import { moduleMetadata } from "@storybook/angular";
+
+import { CommonModule } from "@angular/common";
+import { OverlayModule } from "@angular/cdk/overlay";
+
+import { DropdownTriggerForDirective } from "./../../directive/dropdown-for.directive";
+
+import DropdownComponent from "./dropdown.component";
+import ButtonComponent from "./../button/button.component";
+
+<Meta
+  title="Docs/Dropdown"
+  component={DropdownComponent}
+  argTypes={{
+    label: {
+      description: "Overwritten description",
+      table: {
+        type: {
+          summary: "Something short",
+          detail: "Something really really long",
+        },
+      },
+      control: {
+        type: null,
+      },
+    },
+  }}
+/>
+
+# Dropdown
+
+Simple dropdown aue vous pouvez utiliser partout meme quand il n'y en a pas besoin. Tout le monde aime les dropdown
+
+## Context
+
+On utilise le dropdown en le mettant dans l'application.
+
+## Usage
+
+Explanation of Usage
+
+```js
+<chromosome-button
+  [dropdownTriggerFor]="dropdown"
+  [label]="'Open dropdown'"
+  [type]="'ghost'"
+></chromosome-button>
+<chromosome-dropdown #dropdown>
+  <div (click)="yourClickActions()" class="dropdown-item"> Action 1 </div>
+  <div (click)="yourClickActions()" class="dropdown-item"> Action 2 </div>
+  <div (click)="yourClickActions()" class="dropdown-item"> Action 3 </div>
+</chromosome-dropdown>
+```
+
+<Canvas>
+  <Story
+    name="basic"
+    decorators={[
+      moduleMetadata({
+        declarations: [DropdownTriggerForDirective, ButtonComponent],
+        imports: [CommonModule, OverlayModule],
+      }),
+    ]}
+  >
+    {{
+      template: `
+        <chromosome-button
+          [dropdownTriggerFor]="dropdown"
+          [label]="'Open dropdown'"
+          [type]="'ghost'"
+        ></chromosome-button>
+        <chromosome-dropdown #dropdown>
+          <div (click)="test()" class="dropdown-item">Cut</div>
+          <div (click)="test()" class="dropdown-item">Copy</div>
+          <div (click)="test()" class="dropdown-item">Paste</div>
+        </chromosome-dropdown> 
+      `,
+    }}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    name="not basic"
+    decorators={[
+      moduleMetadata({
+        declarations: [DropdownTriggerForDirective, ButtonComponent],
+        imports: [CommonModule, OverlayModule],
+      }),
+    ]}
+  >
+    {{
+      template: `
+        <chromosome-button
+          [dropdownTriggerFor]="dropdown"
+          [label]="'Open dropdown'"
+          [type]="'ghost'"
+        ></chromosome-button>
+        <chromosome-dropdown #dropdown>
+          <div (click)="test()" class="dropdown-item">Cut</div>
+          <div (click)="test()" class="dropdown-item">Copy</div>
+          <div (click)="test()" class="dropdown-item">Paste</div>
+        </chromosome-dropdown> 
+      `,
+    }}
+  </Story>
+</Canvas>
+
+## API
+
+L'API est customisable
+
+<ArgsTable story="basic" />

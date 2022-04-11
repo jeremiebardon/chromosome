@@ -5,6 +5,11 @@ import { Meta, moduleMetadata, Story } from '@storybook/angular';
 
 import IconComponent from './icon.component';
 
+const iconDefaultValue = {
+  'width.rem': 1.25,
+  fill: '#fff',
+};
+
 export default {
   title: 'Icon',
   component: IconComponent,
@@ -13,19 +18,29 @@ export default {
       imports: [HttpClientModule, AngularSvgIconModule.forRoot()],
     }),
   ],
-} as Meta;
-
-const Template: Story = (args) => ({
-  props: { ...args },
   argTypes: {
     style: {
-      control: 'object',
-      default: {
-        'width.rem': 1.25,
+      description: 'A custom description for icon',
+      table: {
+        type: {
+          summary: 'object',
+          detail: '{ "width.rem": 3, "width.height": 2, "fill": "#fff" }',
+        },
+      },
+      control: {
+        type: 'object',
+      },
+      defaultValue: {
+        'width.rem': 3,
+        'width.height': 2,
         fill: '#fff',
       },
     },
   },
+} as Meta;
+
+const Template: Story = (args) => ({
+  props: { ...args },
 });
 
 export const IconArchive = Template.bind({});

@@ -1,6 +1,74 @@
 {
     "pipes": [],
-    "interfaces": [],
+    "interfaces": [
+        {
+            "name": "DropdownPanel",
+            "id": "interface-DropdownPanel-0c30a6dc63faf6609b11b30afda0f1e6611b57494e74a4e2bf0a93ac9bbbdf414b958e16ad9802c2e40bdb23aaf1dd562f64dbc3a7580942b37eae0d81ac57fc",
+            "file": "src/app/shared/components/models/dropdown.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "import { EventEmitter, TemplateRef } from '@angular/core';\r\n\r\nexport interface DropdownPanel {\r\n  templateRef: TemplateRef<any>;\r\n  readonly closed: EventEmitter<void>;\r\n}\r\n\r\nexport interface DropdownParams {\r\n  dropdownClass?: string;\r\n  backdropClass?: string;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "closed",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "EventEmitter<void>",
+                    "optional": false,
+                    "description": "",
+                    "line": 5,
+                    "modifierKind": [
+                        144
+                    ]
+                },
+                {
+                    "name": "templateRef",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TemplateRef<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "DropdownParams",
+            "id": "interface-DropdownParams-0c30a6dc63faf6609b11b30afda0f1e6611b57494e74a4e2bf0a93ac9bbbdf414b958e16ad9802c2e40bdb23aaf1dd562f64dbc3a7580942b37eae0d81ac57fc",
+            "file": "src/app/shared/components/models/dropdown.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "import { EventEmitter, TemplateRef } from '@angular/core';\r\n\r\nexport interface DropdownPanel {\r\n  templateRef: TemplateRef<any>;\r\n  readonly closed: EventEmitter<void>;\r\n}\r\n\r\nexport interface DropdownParams {\r\n  dropdownClass?: string;\r\n  backdropClass?: string;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "backdropClass",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 10
+                },
+                {
+                    "name": "dropdownClass",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 9
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        }
+    ],
     "injectables": [
         {
             "name": "DialogService",
@@ -19,11 +87,282 @@
     "guards": [],
     "interceptors": [],
     "classes": [],
-    "directives": [],
+    "directives": [
+        {
+            "name": "AutoFocusDirective",
+            "id": "directive-AutoFocusDirective-6fddee78a729a76605614e3eae749cf4dbd1e642a12887e569dd521f972222d7a562040c860bd6bbeff3fdebe07e66d8f46b01d62ea13e92fd6775393b95908a",
+            "file": "src/app/shared/directive/autofocus.directive.ts",
+            "type": "directive",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { AfterContentInit, Directive, ElementRef, Input } from '@angular/core';\r\n\r\n@Directive({\r\n  selector: '[autoFocus]',\r\n})\r\nexport class AutoFocusDirective implements AfterContentInit {\r\n  @Input() autoFocus: boolean;\r\n\r\n  constructor(private el: ElementRef) {}\r\n\r\n  ngAfterContentInit(): void {\r\n    if (this.autoFocus) {\r\n      setTimeout(() => this.el.nativeElement.focus());\r\n    }\r\n  }\r\n}\r\n",
+            "selector": "[autoFocus]",
+            "providers": [],
+            "inputsClass": [
+                {
+                    "name": "autoFocus",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 7,
+                    "type": "boolean",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngAfterContentInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 11,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "implements": [
+                "AfterContentInit"
+            ],
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "el",
+                        "type": "ElementRef",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 7,
+                "jsdoctags": [
+                    {
+                        "name": "el",
+                        "type": "ElementRef",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "DropdownTriggerForDirective",
+            "id": "directive-DropdownTriggerForDirective-dd6b40e1bbf1e324462209e778074e2aa1b907164d502e3ce59530f9675b5f778f67e6a226f3d431be29086919994d8c1429e6d77f09a6715f96df212d656ddd",
+            "file": "src/app/shared/directive/dropdown-for.directive.ts",
+            "type": "directive",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import {\r\n  Directive,\r\n  ElementRef,\r\n  Input,\r\n  OnDestroy,\r\n  OnInit,\r\n  ViewContainerRef,\r\n} from '@angular/core';\r\nimport { Overlay, OverlayRef } from '@angular/cdk/overlay';\r\nimport { TemplatePortal } from '@angular/cdk/portal';\r\nimport { merge, Observable, Subscription } from 'rxjs';\r\nimport {\r\n  DropdownPanel,\r\n  DropdownParams,\r\n} from '../components/models/dropdown.model';\r\n\r\n@Directive({\r\n  selector: '[dropdownTriggerFor]',\r\n  host: {\r\n    '(click)': 'toggleDropdown()',\r\n  },\r\n})\r\nexport class DropdownTriggerForDirective implements OnDestroy, OnInit {\r\n  private isDropdownOpen = false;\r\n  private overlayRef: OverlayRef;\r\n  private dropdownClosingActionsSub = Subscription.EMPTY;\r\n\r\n  @Input('dropdownTriggerFor') public dropdownPanel: DropdownPanel;\r\n  @Input() dropdownParams: DropdownParams;\r\n\r\n  constructor(\r\n    private overlay: Overlay,\r\n    private elementRef: ElementRef<HTMLElement>,\r\n    private viewContainerRef: ViewContainerRef\r\n  ) {}\r\n\r\n  ngOnInit(): void {}\r\n\r\n  toggleDropdown(): void {\r\n    this.isDropdownOpen ? this.destroyDropdown() : this.openDropdown();\r\n  }\r\n\r\n  openDropdown(): void {\r\n    this.isDropdownOpen = true;\r\n    this.overlayRef = this.overlay.create({\r\n      hasBackdrop: false,\r\n      panelClass: 'dropdown-panel',\r\n      maxWidth: '14rem',\r\n      scrollStrategy: this.overlay.scrollStrategies.close(),\r\n      positionStrategy: this.overlay\r\n        .position()\r\n        .flexibleConnectedTo(this.elementRef)\r\n        .withPositions([\r\n          {\r\n            originX: 'end',\r\n            originY: 'bottom',\r\n            overlayX: 'end',\r\n            overlayY: 'top',\r\n            offsetY: 24,\r\n          },\r\n        ]),\r\n    });\r\n\r\n    const templatePortal = new TemplatePortal(\r\n      this.dropdownPanel.templateRef,\r\n      this.viewContainerRef\r\n    );\r\n\r\n    this.overlayRef.attach(templatePortal);\r\n\r\n    this.dropdownClosingActionsSub = this.dropdownClosingActions().subscribe(\r\n      () => this.destroyDropdown()\r\n    );\r\n  }\r\n\r\n  private dropdownClosingActions(): Observable<MouseEvent | void> {\r\n    const backdropClick$ = this.overlayRef.backdropClick();\r\n    const detachment$ = this.overlayRef.detachments();\r\n    const dropdownClosed = this.dropdownPanel.closed;\r\n\r\n    return merge(backdropClick$, detachment$, dropdownClosed);\r\n  }\r\n\r\n  private destroyDropdown(): void {\r\n    if (!this.overlayRef || !this.isDropdownOpen) {\r\n      return;\r\n    }\r\n\r\n    this.dropdownClosingActionsSub.unsubscribe();\r\n    this.isDropdownOpen = false;\r\n    this.overlayRef.detach();\r\n  }\r\n\r\n  ngOnDestroy(): void {\r\n    if (this.overlayRef) {\r\n      this.overlayRef.dispose();\r\n    }\r\n  }\r\n}\r\n",
+            "selector": "[dropdownTriggerFor]",
+            "providers": [],
+            "inputsClass": [
+                {
+                    "name": "dropdownParams",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 29,
+                    "type": "DropdownParams",
+                    "decorators": []
+                },
+                {
+                    "name": "dropdownTriggerFor",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 28,
+                    "type": "DropdownPanel",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "propertiesClass": [
+                {
+                    "name": "dropdownClosingActionsSub",
+                    "defaultValue": "Subscription.EMPTY",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 26,
+                    "modifierKind": [
+                        121
+                    ]
+                },
+                {
+                    "name": "isDropdownOpen",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 24,
+                    "modifierKind": [
+                        121
+                    ]
+                },
+                {
+                    "name": "overlayRef",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "OverlayRef",
+                    "optional": false,
+                    "description": "",
+                    "line": 25,
+                    "modifierKind": [
+                        121
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "destroyDropdown",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 84,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        121
+                    ]
+                },
+                {
+                    "name": "dropdownClosingActions",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Observable<MouseEvent | void>",
+                    "typeParameters": [],
+                    "line": 76,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        121
+                    ]
+                },
+                {
+                    "name": "ngOnDestroy",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 94,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 37,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "openDropdown",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 43,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "toggleDropdown",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 39,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "implements": [
+                "OnDestroy",
+                "OnInit"
+            ],
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "overlay",
+                        "type": "Overlay",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    },
+                    {
+                        "name": "elementRef",
+                        "type": "ElementRef<HTMLElement>",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    },
+                    {
+                        "name": "viewContainerRef",
+                        "type": "ViewContainerRef",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 29,
+                "jsdoctags": [
+                    {
+                        "name": "overlay",
+                        "type": "Overlay",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "elementRef",
+                        "type": "ElementRef<HTMLElement>",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "viewContainerRef",
+                        "type": "ViewContainerRef",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
     "components": [
         {
             "name": "AppComponent",
-            "id": "component-AppComponent-e07cbadb32e2217b79c3a88dae7d17ab6bcb2a41d56feef318aad1c47f1dba1b6e0f979d28d800d0d94807a6bade289ee3760379fec1e3bd10d23bed3d231990",
+            "id": "component-AppComponent-c35272707f9190c370e0177b59cabacb77714587a834c6cdf9cd22387ecd65bfbeea9c25a44cf51551cc7351e25e1b6d2c007a29e65e6b36ec27a2f0460357ed",
             "file": "src/app/app.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -33,7 +372,7 @@
             "selector": "app-root",
             "styleUrls": [],
             "styles": [],
-            "template": "<div>\n  <chromosome-icon\n    [iconUrl]=\"'../assets/icons/archive.svg'\"\n  ></chromosome-icon>\n</div>\n",
+            "template": "<div>\n  <div class=\"wrapper\">\n    <chromosome-button\n      [dropdownTriggerFor]=\"dropdown\"\n      [label]=\"'Open dropdown'\"\n      [type]=\"'ghost'\"\n    ></chromosome-button>\n    <chromosome-dropdown #dropdown>\n      <div (click)=\"test()\" class=\"dropdown-item\">Cut</div>\n      <div (click)=\"test()\" class=\"dropdown-item\">Copy</div>\n      <div (click)=\"test()\" class=\"dropdown-item\">Paste</div>\n    </chromosome-dropdown>\n  </div>\n</div>\n",
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [],
@@ -47,10 +386,21 @@
                     "type": "string",
                     "optional": false,
                     "description": "",
-                    "line": 14
+                    "line": 23
                 }
             ],
-            "methodsClass": [],
+            "methodsClass": [
+                {
+                    "name": "test",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 25,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
             "deprecated": false,
             "deprecationMessage": "",
             "hostBindings": [],
@@ -58,50 +408,10 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  template: `\n    <div>\n      <chromosome-icon\n        [iconUrl]=\"'../assets/icons/archive.svg'\"\n      ></chromosome-icon>\n    </div>\n  `,\n})\nexport class AppComponent {\n  title = 'chromosome';\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-root',\r\n  template: `\r\n    <div>\r\n      <div class=\"wrapper\">\r\n        <chromosome-button\r\n          [dropdownTriggerFor]=\"dropdown\"\r\n          [label]=\"'Open dropdown'\"\r\n          [type]=\"'ghost'\"\r\n        ></chromosome-button>\r\n        <chromosome-dropdown #dropdown>\r\n          <div (click)=\"test()\" class=\"dropdown-item\">Cut</div>\r\n          <div (click)=\"test()\" class=\"dropdown-item\">Copy</div>\r\n          <div (click)=\"test()\" class=\"dropdown-item\">Paste</div>\r\n        </chromosome-dropdown>\r\n      </div>\r\n    </div>\r\n  `,\r\n})\r\nexport class AppComponent {\r\n  title = 'chromosome';\r\n\r\n  test() {\r\n    console.log('click');\r\n  }\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": ""
-        },
-        {
-            "name": "AvatarComponent",
-            "id": "component-AvatarComponent-5ec24d6b8dac73d5e6d60b40903b9a87c2deee227f8d799fc859316c4bb7972794ae5a5370cba5554eb46524aa24cf1373aed71275b1a2ad497fc5bc78af895b",
-            "file": "src/app/shared/components/avatar/avatar.component.ts",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "chromosome-avatar",
-            "styleUrls": [
-                "./avatar.component.css"
-            ],
-            "styles": [],
-            "templateUrl": [
-                "./avatar.component.html"
-            ],
-            "viewProviders": [],
-            "inputsClass": [],
-            "outputsClass": [],
-            "propertiesClass": [],
-            "methodsClass": [],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "description": "",
-            "rawdescription": "\n",
-            "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'chromosome-avatar',\r\n  templateUrl: './avatar.component.html',\r\n  styleUrls: ['./avatar.component.css'],\r\n})\r\nexport default class AvatarComponent {}\r\n",
-            "assetsDirs": [],
-            "styleUrlsData": [
-                {
-                    "data": "",
-                    "styleUrl": "./avatar.component.css"
-                }
-            ],
-            "stylesData": "",
-            "templateData": ""
         },
         {
             "name": "ButtonComponent",
@@ -220,8 +530,76 @@
             "templateData": "<button type=\"button\" (click)=\"onClick.emit($event)\" [ngClass]=\"classes\">\r\n  {{ label }}\r\n</button>"
         },
         {
+            "name": "DropdownComponent",
+            "id": "component-DropdownComponent-e26100ca51feeb87d139fed01f60f92ebd96f68570ad233babf7f0a72e9a6cf7b2ae43e82d65aa7f6c0e1baafbf2cc25b6998496d9b75aeae50aee18cc622adb",
+            "file": "src/app/shared/components/dropdown/dropdown.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "chromosome-dropdown",
+            "styleUrls": [
+                "./dropdown.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./dropdown.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [
+                {
+                    "name": "closed",
+                    "defaultValue": "new EventEmitter<void>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 17,
+                    "type": "EventEmitter<void>"
+                }
+            ],
+            "propertiesClass": [
+                {
+                    "name": "templateRef",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TemplateRef<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 16,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "TemplateRef"
+                        }
+                    ]
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {\r\n  Component,\r\n  EventEmitter,\r\n  Output,\r\n  TemplateRef,\r\n  ViewChild,\r\n} from '@angular/core';\r\nimport { DropdownPanel } from '../models/dropdown.model';\r\n\r\n@Component({\r\n  selector: 'chromosome-dropdown',\r\n  templateUrl: './dropdown.component.html',\r\n  styleUrls: ['./dropdown.component.css'],\r\n})\r\nexport default class DropdownComponent implements DropdownPanel {\r\n  @ViewChild(TemplateRef) templateRef: TemplateRef<any>;\r\n  @Output() closed: EventEmitter<void> = new EventEmitter<void>();\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".dropdown-content {\r\n  width: 100%;\r\n  padding: 0.5rem 1rem;\r\n  background-color: white;\r\n  border-radius: 6px;\r\n  box-shadow: var(--button-hover-shadow);\r\n}",
+                    "styleUrl": "./dropdown.component.css"
+                }
+            ],
+            "stylesData": "",
+            "implements": [
+                "DropdownPanel"
+            ],
+            "templateData": "<ng-template>\r\n  <div (click)=\"closed.emit()\" class=\"dropdown-content\">\r\n    <ng-content></ng-content>\r\n  </div>\r\n</ng-template>"
+        },
+        {
             "name": "IconComponent",
-            "id": "component-IconComponent-70cd986b329e46e70c83be5fe78c428dc7bdb8040bc77df3039dacb902e26eab3781f399d4b4c5a211c61f9bccc19c81be726008003c46b415cef51cc4cc2809",
+            "id": "component-IconComponent-e664a927def552e89a43c6043e3b811a7f274d646ce2e244307a155e1db19ad4f4f7736446c16bfbf19344ad7688d7b8ce3f53a84919191f4406a3045b56b94c",
             "file": "src/app/shared/components/icon/icon.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -250,13 +628,13 @@
                 },
                 {
                     "name": "style",
-                    "defaultValue": "{}",
+                    "defaultValue": "null",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "rawdescription": "\n\nSvg style\n",
-                    "description": "<p>Svg style</p>\n",
+                    "rawdescription": "\n\nSvg style applied to the element\n",
+                    "description": "<p>Svg style applied to the element</p>\n",
                     "line": 19,
-                    "type": "object",
+                    "type": "any",
                     "decorators": []
                 }
             ],
@@ -270,7 +648,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'chromosome-icon',\r\n  template: `<svg-icon [src]=\"iconUrl\" [svgStyle]=\"style\"></svg-icon>`,\r\n  styleUrls: ['./icon.component.css'],\r\n})\r\nexport default class IconComponent {\r\n  /**\r\n   * Absosolute url to icon\r\n   */\r\n  @Input()\r\n  iconUrl: string = '';\r\n\r\n  /**\r\n   * Svg style\r\n   */\r\n  @Input()\r\n  style: object = {};\r\n}\r\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'chromosome-icon',\r\n  template: `<svg-icon [src]=\"iconUrl\" [svgStyle]=\"style\"></svg-icon>`,\r\n  styleUrls: ['./icon.component.css'],\r\n})\r\nexport default class IconComponent {\r\n  /**\r\n   * Absosolute url to icon\r\n   */\r\n  @Input()\r\n  iconUrl: string = '';\r\n\r\n  /**\r\n   * Svg style applied to the element\r\n   */\r\n  @Input()\r\n  style: any = null;\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -284,13 +662,13 @@
     "modules": [
         {
             "name": "AppModule",
-            "id": "module-AppModule-db6e8a51553ba5e2fc056653031bc877678cdf35d7cdd7d4df53d8f3faadb1221cb2f28ea723c5480097dd95a7f112196a767042747b7c6f79b42ad6117ad515",
+            "id": "module-AppModule-69cfe1ac81b66cc4b4cac0c6fb09e2db50a35b1d61a1d8e4107bdd1000692370945af20a06155d22d4fb47ab10db6425cc676235da6d9c6aec41c4fef13b9106",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app.module.ts",
             "methods": [],
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { HttpClientModule } from '@angular/common/http';\nimport { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\nimport { AngularSvgIconModule } from 'angular-svg-icon';\nimport { AppComponent } from './app.component';\nimport { SharedModule } from './shared/shared.module';\n\n@NgModule({\n  declarations: [AppComponent],\n  imports: [BrowserModule, CommonModule, SharedModule, HttpClientModule],\n  providers: [],\n  bootstrap: [AppComponent],\n})\nexport class AppModule {}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\r\nimport { HttpClientModule } from '@angular/common/http';\r\nimport { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\nimport { AppComponent } from './app.component';\r\nimport { SharedModule } from './shared/shared.module';\r\n\r\n@NgModule({\r\n  declarations: [AppComponent],\r\n  imports: [BrowserModule, CommonModule, SharedModule, HttpClientModule],\r\n  providers: [],\r\n  bootstrap: [AppComponent],\r\n})\r\nexport class AppModule {}\r\n",
             "children": [
                 {
                     "type": "providers",
@@ -332,13 +710,13 @@
         },
         {
             "name": "SharedModule",
-            "id": "module-SharedModule-6b26f57588d3054187f5289981bc7bb8fdd9890e9580ce7222d2838a1dff07f6cc3f2b4bbf71f3d0a9b322d9f1a2803e94f8acca5a7fb955f54bd11dd860edab",
+            "id": "module-SharedModule-9712ccd2a9412c3419f4ef707c3e59dd88f782ad1721adf7e0aaf856dcded4148837ff9b4a06b69420fb8ac0f324255a6ed94985acee3b30c013fd1af0883828",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/shared/shared.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport ButtonComponent from './components/button/button.component';\nimport { DialogService } from './services/dialog.sevice';\nimport AvatarComponent from './components/avatar/avatar.component';\nimport IconComponent from './components/icon/icon.component';\nimport { AngularSvgIconModule } from 'angular-svg-icon';\n\n@NgModule({\n  declarations: [ButtonComponent, AvatarComponent, IconComponent],\n  imports: [CommonModule, AngularSvgIconModule.forRoot()],\n  exports: [ButtonComponent, AvatarComponent, IconComponent],\n  providers: [DialogService],\n})\nexport class SharedModule {}\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { OverlayModule } from '@angular/cdk/overlay';\nimport { AngularSvgIconModule } from 'angular-svg-icon';\n\nimport { DialogService } from './services/dialog.sevice';\n\nimport { AutoFocusDirective } from './directive/autofocus.directive';\nimport { DropdownTriggerForDirective } from './directive/dropdown-for.directive';\n\nimport IconComponent from './components/icon/icon.component';\nimport ButtonComponent from './components/button/button.component';\nimport DropdownComponent from './components/dropdown/dropdown.component';\n\n@NgModule({\n  declarations: [\n    ButtonComponent,\n    IconComponent,\n    DropdownComponent,\n    DropdownTriggerForDirective,\n    AutoFocusDirective,\n  ],\n  imports: [CommonModule, AngularSvgIconModule.forRoot(), OverlayModule],\n  exports: [\n    ButtonComponent,\n    IconComponent,\n    DropdownComponent,\n    DropdownTriggerForDirective,\n    AutoFocusDirective,\n  ],\n  providers: [DialogService],\n})\nexport class SharedModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -352,10 +730,16 @@
                     "type": "declarations",
                     "elements": [
                         {
-                            "name": "AvatarComponent"
+                            "name": "AutoFocusDirective"
                         },
                         {
                             "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "DropdownComponent"
+                        },
+                        {
+                            "name": "DropdownTriggerForDirective"
                         },
                         {
                             "name": "IconComponent"
@@ -370,10 +754,16 @@
                     "type": "exports",
                     "elements": [
                         {
-                            "name": "AvatarComponent"
+                            "name": "AutoFocusDirective"
                         },
                         {
                             "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "DropdownComponent"
+                        },
+                        {
+                            "name": "DropdownTriggerForDirective"
                         },
                         {
                             "name": "IconComponent"
@@ -407,21 +797,21 @@
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/environments/environment.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "object",
-                "defaultValue": "{\n  production: false\n}"
-            },
-            {
-                "name": "environment",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/environments/environment.prod.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "object",
                 "defaultValue": "{\n  production: true\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: false\n}"
             },
             {
                 "name": "Ghost",
@@ -442,6 +832,16 @@
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "iconDefaultValue",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/shared/components/icon/icon.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n  'width.rem': 1.25,\r\n  fill: '#fff',\r\n}"
             },
             {
                 "name": "Primary",
@@ -490,7 +890,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "(args) => ({\r\n  props: { ...args },\r\n  argTypes: {\r\n    style: { control: 'object' },\r\n  },\r\n})"
+                "defaultValue": "(args) => ({\r\n  props: { ...args },\r\n})"
             },
             {
                 "name": "Tertiary",
@@ -528,18 +928,6 @@
                     "type": "literal type"
                 }
             ],
-            "src/environments/environment.ts": [
-                {
-                    "name": "environment",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/environments/environment.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "object",
-                    "defaultValue": "{\n  production: false\n}"
-                }
-            ],
             "src/environments/environment.prod.ts": [
                 {
                     "name": "environment",
@@ -550,6 +938,18 @@
                     "deprecationMessage": "",
                     "type": "object",
                     "defaultValue": "{\n  production: true\n}"
+                }
+            ],
+            "src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: false\n}"
                 }
             ],
             "src/app/shared/components/button/button.stories.ts": [
@@ -616,6 +1016,16 @@
                     "defaultValue": "Template.bind({})"
                 },
                 {
+                    "name": "iconDefaultValue",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/shared/components/icon/icon.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n  'width.rem': 1.25,\r\n  fill: '#fff',\r\n}"
+                },
+                {
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
@@ -623,7 +1033,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "(args) => ({\r\n  props: { ...args },\r\n  argTypes: {\r\n    style: { control: 'object' },\r\n  },\r\n})"
+                    "defaultValue": "(args) => ({\r\n  props: { ...args },\r\n})"
                 }
             ]
         },
@@ -633,7 +1043,7 @@
     },
     "routes": [],
     "coverage": {
-        "count": 9,
+        "count": 6,
         "status": "low",
         "files": [
             {
@@ -642,16 +1052,7 @@
                 "linktype": "component",
                 "name": "AppComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/2",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/shared/components/avatar/avatar.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "AvatarComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
+                "coverageCount": "0/3",
                 "status": "low"
             },
             {
@@ -714,6 +1115,15 @@
                 "status": "low"
             },
             {
+                "filePath": "src/app/shared/components/dropdown/dropdown.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "DropdownComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
                 "filePath": "src/app/shared/components/icon/icon.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -737,9 +1147,55 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
+                "name": "iconDefaultValue",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/components/icon/icon.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
                 "name": "Template",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/components/models/dropdown.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "DropdownPanel",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/components/models/dropdown.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "DropdownParams",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/directive/autofocus.directive.ts",
+                "type": "directive",
+                "linktype": "directive",
+                "name": "AutoFocusDirective",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/directive/dropdown-for.directive.ts",
+                "type": "directive",
+                "linktype": "directive",
+                "name": "DropdownTriggerForDirective",
+                "coveragePercent": 0,
+                "coverageCount": "0/13",
                 "status": "low"
             },
             {
