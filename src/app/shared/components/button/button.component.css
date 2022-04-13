@@ -31,7 +31,7 @@
 
 .chromosome-button.secondary {
   background: var(--secondary-button-enabled);
-  color: #fff;
+  color: red;
 }
 
 .chromosome-button.secondary:hover {
