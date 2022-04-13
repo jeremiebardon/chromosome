@@ -4,12 +4,25 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
     <div>
-      <chromosome-icon
-        [iconUrl]="'../assets/icons/archive.svg'"
-      ></chromosome-icon>
+      <div class="wrapper">
+        <chromosome-button
+          [dropdownTriggerFor]="dropdown"
+          [label]="'Open dropdown'"
+          [type]="'ghost'"
+        ></chromosome-button>
+        <chromosome-dropdown #dropdown>
+          <div (click)="test()" class="dropdown-item">Cut</div>
+          <div (click)="test()" class="dropdown-item">Copy</div>
+          <div (click)="test()" class="dropdown-item">Paste</div>
+        </chromosome-dropdown>
+      </div>
     </div>
   `,
 })
 export class AppComponent {
   title = 'chromosome';
+
+  test() {
+    console.log('click');
+  }
 }
