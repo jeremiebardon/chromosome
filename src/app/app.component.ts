@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
     <div>
       <div class="wrapper">
         sdsdsdsdsd
+
         <chromosome-button
           [dropdownTriggerFor]="dropdown"
           [label]="'Open dropdown'"
